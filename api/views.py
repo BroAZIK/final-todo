@@ -69,12 +69,3 @@ class TaskDetailView(APIView):
 
         return Response({'message': 'deleted.'})
 
-
-# class UsersView(APIView):
-    
-#     def get(self, request: Request) -> Response:
-#         users = User.objects.filter(is_superuser=False)
-
-#         serializer = UserSerializer(users, many=True)
-        
-#         return Response(serializer.data)
